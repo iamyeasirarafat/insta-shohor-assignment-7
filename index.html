@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Insta-Sohor</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- Latest compiled and minified CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+
+        <!-- google Montserrat  font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+                <a class="navbar-brand" href="#">Insta-Sohor</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-link active" role="button" onclick="switchTab( 'posts' )">
+                            <i class="fa-solid fa-house"></i>
+                        </li>
+
+                        <li class="nav-link active" role="button" onclick="switchTab( 'liked' )">
+                            <i class="fa-solid fa-heart text-danger"></i>
+                        </li>
+
+                        <li class="nav-link active" role="button" onclick="switchTab( 'reported' )">
+                            <i class="fa-solid fa-eye-slash"></i>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="main container mx-auto p-3">
+            <div id="posts">
+            </div>
+            <div id="liked">
+                <h1>Liked posts</h1>
+            </div>
+
+            <div id="reported">
+                <h1>Reported posts</h1>
+            </div>
+            <section id="bonus" class="bonus-part ">
+                <div class="row ">
+                    <div class="col-md-6 my-5">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  জাভাস্ক্রিপ্ট কিভাবে কাজ করে?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">জাভাস্ক্রিপ্ট হলো সিঙ্গেল থ্রেটেড প্রোগ্রামিং ল্যাঙ্গুয়েজ। জার মানে হলো এটা এক সময় একটা কাজ সম্পাদন করে থাকে। জাভাস্ক্রিপ্ট একটা ক্লাইন্ট সাইট প্রোগ্রামিং ল্যাঙ্গুয়েজ। কিন্তু একটা গুরুত্বপুর্ন বিষয় হলো ক্লাইন্ট ব্রাউজার কেও জাভাস্ক্রিপ্ট সাপোর্ট করতে হবে। বর্তমানে আধুনিক প্রায় সকল ব্রাউজার ই জাভাস্ক্রিপ্ট সাপোর্ট করে। জেমনঃ ক্রোম ব্যাবহার করে তাদের নিজস্ব জাভাস্ক্রিপ্ট ইঞ্জিন V8। EDGE করে CHAkra, SAFARI করে JAVASCRIPT CORE, FOREFOX করে SPIDERMONKEY</div>
+                              </div>
+                            </div>
+                           </div>
+                    </div>
+                    <div class="col-md-6 my-5">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne১" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  জাভাস্ক্রিপ্ট ইভেন্ট লুপ
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne১" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">জাভাস্ক্রিপ্ট হলো সিঙ্গেল থ্রেটেড প্রোগ্রামিং ল্যাঙ্গুয়েজ। মানে হলো সে এক সময় একটা কাজ সম্পাদন করবে। আবার জাভাস্ক্রিপ্ট অ্যাসিনক্রোনাস ল্যাঙ্গুয়েজ । জাভাস্ক্রিপ্টএ যা কোড লেখা হয় তা সব কিছু একটার পরে একটা রান করে। কিন্তু কোনো ফাংশন যদি এক্সিকিউট করতে বেশি সময় লাগে তাহলে সে পরের টা এক্সিকিউট করে এর মানে কি সে মাল্টি থ্রেটেড? না আসলে সব কাজ তো জাভাস্ক্রিপ্ট একা করে না কিছু কাজ ব্রাউজার সিস্টেম করে। যেমন ajax  কল করে যখন তখন ডাটা আনার দায়িত্ব হোস্ট সিস্টেম এর কাছে চলে জায় জাভাস্ক্রিপ্ট কিন্তু সিরিয়ালি ই একটার পরে একটা কল করে কিন্তু হোস্ট সিস্টেম একসাথে কয়টা কাজ সম্পাদন করবে সেটা তার ব্যাপার। এই যে সিরিয়ালি একটার পরে একটা কল করতেছে এতাই এভেন্ট লুপ ।
+                                </div>
+                              </div>
+                            </div>
+                           </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+
+        <!-- add javascript  file  -->
+        <script src="js/app.js"></script>
+        <!-- bootstrap javascript file  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
